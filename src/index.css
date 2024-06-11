@@ -1,0 +1,216 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s, color 0.3s;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: #444;
+}
+
+/* Estilos específicos */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  flex: 1;
+}
+
+.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.dino-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.dino-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s, background-color 0.3s, color 0.3s;
+}
+
+.dino-item:hover {
+  transform: scale(1.05);
+}
+
+.dino-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.dino-item p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dino-detail img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Estilos para o botão "Voltar" */
+button {
+  background-color: #3f9442;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.CommentSection {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Estilos para o botão de modo escuro */
+.dark-mode-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #555;
+}
+
+/* Estilos para Dark Mode */
+.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Estender o dark mode para todo o body */
+.dark body {
+  background-color: #121212;
+}
+
+/* Estender o dark mode para toda a página */
+.dark .container {
+  background-color: #121212;
+}
+
+.dark .header {
+  background-color: #333;
+}
+
+.dark .dino-item {
+  background-color: #2b2b2b;
+  color: #f0f0f0;
+  border: 1px solid #1f1f1f;
+  box-shadow: 0 2px 4px rgba(14, 68, 21, 0.397);
+}
+
+.dark button {
+  background-color: #555;
+  color: #f0f0f0;
+}
+
+.dark button:hover {
+  background-color: #777;
+}
+
+.dark a {
+  color: #98ffa6;
+}
+
+
+/* Estilos para a timeline */
+.timeline {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline h1 {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.timeline ul {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline-event {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.timeline-date {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.timeline-description {
+  margin-left: 10px;
+  color: #666;
+}
+
+/* Estilos para a timeline no dark mode */
+.dark .timeline {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.dark .timeline h1 {
+  color: #f0f0f0;
+}
+
+.dark .timeline-description {
+  color: #ccc;
+}
