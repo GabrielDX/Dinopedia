@@ -1,0 +1,268 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  transition: background-color 0.6s, color 0.6s;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  --dark-mode: 0;
+  background-color: hsl(0, 0%, calc(100% * (1 - var(--dark-mode))));
+}
+
+.color-mode {
+  aspect-ratio: 1;
+  filter: invert(var(--dark-mode));
+  inline-size: 25rem;
+  max-inline-size: 40px;
+  transform: rotate(calc(var(--dark-mode) * 180deg));
+  transition: all 0.6s ease;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  color: #444;
+}
+
+.DinoTitle, .dark .DinoTitle {
+  font-size: 50px;
+  margin-top: -10px;
+  color: #3f9442;
+}
+
+.container {
+  max-width: auto;
+  margin: auto;
+  padding: 20px;
+  flex: 1;
+  background-color: #ffffff;
+  transition: background-color 0.6s, color 0.6s;
+}
+
+.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.dino-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.dino-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s, background-color 0.3s, color 0.3s;
+}
+
+.dino-item:hover {
+  transform: scale(1.05);
+}
+
+.dino-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.dino-item p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dino-detail img {
+  max-width: 70vw;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #3f9442;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.comment-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.comment {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #8585857a;
+  border-radius: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.form-control {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: calc(100% - 20px);
+}
+
+.form-group,
+.form-control,
+button {
+  display: flex;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+input[type="text"],
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  height: 50px;
+  align-self: center;
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dark-mode-toggle img {
+  width: 30px;
+  height: 30px;
+}
+
+.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark .container {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark .dino-item {
+  background-color: #2b2b2b;
+  color: #f0f0f0;
+  border: 1px solid #1f1f1f;
+  box-shadow: 0 2px 4px rgba(14, 68, 21, 0.397);
+}
+
+.dark button {
+  background-color: #555;
+  color: #98ffa6;
+}
+
+.dark button:hover {
+  background-color: #003a1a;
+}
+
+.dark a {
+  color: #98ffa6;
+}
+
+.dark h1,
+.dark h2,
+.dark h3 {
+  color: #d8d8d8;
+}
+
+.timeline {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline h1 {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.timeline ul {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline-event {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.timeline-date {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.timeline-description {
+  margin-left: 10px;
+  color: #666;
+}
+
+.dark .timeline {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.dark .timeline h1 {
+  color: #f0f0f0;
+}
+
+.dark .timeline-description {
+  color: #ccc;
+}
