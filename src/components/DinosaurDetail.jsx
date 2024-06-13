@@ -22,6 +22,7 @@ const DinosaurDetail = () => {
             <h1>{dinosaur.name}</h1>
             <img src={dinosaur.image} alt={dinosaur.name} />
             <p>{dinosaur.description}</p>
+            <p>Nome cientifico: {dinosaur.scientificName}</p>
             <p>Período: {dinosaur.period}</p>
             <p>Alimentação: {dinosaur.diet}</p>
         </div>

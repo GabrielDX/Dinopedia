@@ -9,8 +9,16 @@ const Home = () => {
             <h1 className="DinoTitle">Dinopedia</h1>
             <h2>Bem-vindo</h2>
             <p>Trabalho Jurassico de Programação Web!</p>
-            <div><Link to="/dinosaurs">Ver Dinossauros    </Link> </div>
-            <div><Link to="/timeline">Ver Linha do Tempo  </Link></div>
+            {/* <div><Link to="/dinosaurs">Ver Dinossauros    </Link> </div>
+            <div><Link to="/timeline">Ver Linha do Tempo  </Link></div> */}
+            <div className='Homebuttons'>
+                <Link to="/dinosaurs">
+                    <button>Dinossauros</button>
+                </Link>
+                <Link to="/timeline">
+                    <button>Linha do tempo</button>
+                </Link>
+            </div>
             <CommentSection />
         </div>
     );

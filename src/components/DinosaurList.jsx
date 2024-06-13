@@ -22,12 +22,12 @@ const DinosaurList = () => {
 
     return (
         <div>
-            <button><Link to="/">Voltar</Link></button>
+            <Link to="/"><button>Voltar</button></Link>
             <h1>Dinossauros</h1>
             <SearchBar onSearch={handleSearch}>
                 <p>Digite o nome de um dinossauro para buscar:</p>
             </SearchBar>
-            <br></br>
+            <br />
             <div className="dino-list">
                 {filteredDinosaurs.map(dino => (
                     <div key={dino.id} className="dino-item">
