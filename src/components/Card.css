@@ -1,0 +1,14 @@
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    margin: 20px;
+}
+
+.dark .card {
+    background-color: #2b2b2b;
+    border: 1px solid #252525;
+}

@@ -96,13 +96,6 @@ h3 {
   font-weight: bold;
 }
 
-
-.dino-detail img {
-  max-width: 60vw;
-  height: auto;
-  margin-bottom: 10px;
-}
-
 button {
   background-color: #3f9442;
   color: white;
@@ -112,11 +105,12 @@ button {
   cursor: pointer;
   margin-bottom: 20px;
   font-size: 16px;
-  box-shadow: 0 2px 4px rgba(82, 82, 82, 0.288);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
   background-color: #45a049;
+  background: #4F95DA;
 }
 
 .comment-section {
@@ -183,7 +177,7 @@ button {
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .timeline ul {
@@ -229,7 +223,7 @@ button {
 
 .dark .container {
   background-color: #121212;
-  color: #f0f0f0;
+
 }
 
 .dark .dino-item {
@@ -238,6 +232,11 @@ button {
   border: 1px solid #1f1f1f;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.432);
 }
+
+/* .dark .dino-detail {
+  background-color: #2b2b2b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.432);
+} */
 
 .dark button {
   background-color: #555;
@@ -262,7 +261,7 @@ button {
 .dark .timeline {
   background-color: #1e1e1e;
   color: #f0f0f0;
-  box-shadow: 0 2px 4px rgba(3, 3, 3, 0.26);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.432);
 }
 
 .dark .timeline h1 {

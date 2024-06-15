@@ -1,15 +1,6 @@
 const dinosaurData = [
   {
     id: 1,
-    name: 'Velociraptor',
-    scientificName: 'Velociraptor mongoliensis',
-    period: 'Cretáceo Superior',
-    diet: 'Carnívoro',
-    avatar: 'https://ideogram.ai/assets/image/lossless/response/YmVs5aZnTl22sLcH5k9RWg',
-    image: 'https://ideogram.ai/assets/image/lossless/response/y4Hqey20TOm2JfBtVQoDAw',
-  },
-  {
-    id: 2,
     name: 'Tiranossauro Rex',
     scientificName: 'Tyrannosaurus rex',
     period: 'Cretáceo Superior',
@@ -17,6 +8,16 @@ const dinosaurData = [
     avatar: 'https://th.bing.com/th/id/OIG2.ENWg50iDo0bEjW682huq?w=1024&h=1024&rs=1&pid=ImgDetMain',
     image: 'https://th.bing.com/th/id/OIG1.SwJNMms5wkNOlqINs.kb?w=1024&h=1024&rs=1&pid=ImgDetMain',
   },
+  {
+    id: 2,
+    name: 'Velociraptor',
+    scientificName: 'Velociraptor mongoliensis',
+    period: 'Cretáceo Superior',
+    diet: 'Carnívoro',
+    avatar: 'https://ideogram.ai/assets/image/lossless/response/YmVs5aZnTl22sLcH5k9RWg',
+    image: 'https://ideogram.ai/assets/image/lossless/response/y4Hqey20TOm2JfBtVQoDAw',
+  },
+
   {
     id: 3,
     name: 'Espinossauro',
@@ -28,6 +29,24 @@ const dinosaurData = [
   },
   {
     id: 4,
+    name: 'Dilofossauro',
+    scientificName: 'Dilophosaurus wetherilli',
+    period: 'Early Jurassic',
+    diet: 'Carnivore',
+    avatar: 'https://i.etsystatic.com/31368146/r/il/8d8778/4406539408/il_570xN.4406539408_nlps.jpg',
+    image: 'https://static.scientificamerican.com/sciam/cache/file/772FAB35-5C60-47BD-AF64576CF62E910E_source.jpg?w=1200',
+  },
+  {
+    id: 5,
+    name: 'Alossauro',
+    scientificName: 'Allosaurus fragilis',
+    period: 'Jurássico Superior',
+    diet: 'Carnívoro',
+    avatar: 'https://cdn.leonardo.ai/users/47183fa0-2f62-4b2d-b55a-e8c336fddbde/generations/c50d926b-87e0-4337-8158-83e3cd276492/Default_Allosaurus_ultra_wide_angle_realistic_looking_at_the_c_1.jpg',
+    image: 'https://static.wixstatic.com/media/fd9286_403181050c39446ebf4624ad248c39e8~mv2.webp/v1/fill/w_940,h_568,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fd9286_403181050c39446ebf4624ad248c39e8~mv2.webp',
+  },
+  {
+    id: 4,
     name: 'Tricerátops',
     scientificName: 'Triceratops horridus',
     period: 'Cretáceo Superior',
@@ -35,15 +54,7 @@ const dinosaurData = [
     avatar: 'https://th.bing.com/th/id/OIG3.QxPS1NgsYE6eDe0_vaAx?pid=ImgGn',
     image: 'https://th.bing.com/th/id/OIG3.NNy6H4BwBm2laadGsAxG?w=1024&h=1024&rs=1&pid=ImgDetMain',
   },
-  {
-    id: 5,
-    name: 'Braquiossauro',
-    scientificName: 'Brachiosaurus altithorax',
-    period: 'Jurássico Superior',
-    diet: 'Herbívoro',
-    avatar: 'https://cdn.leonardo.ai/users/47183fa0-2f62-4b2d-b55a-e8c336fddbde/generations/b3c57235-3bfd-4ac9-826c-23357486513e/Default_Brachiosaurus_45_degress_angled_face_close_up_realisti_2.jpg',
-    image: 'https://img.odcdn.com.br/wp-content/uploads/2022/03/braquissauro-capa.jpg',
-  },
+
   {
     id: 6,
     name: 'Estegossauro',
@@ -62,26 +73,9 @@ const dinosaurData = [
     avatar: 'https://cdn.leonardo.ai/users/47183fa0-2f62-4b2d-b55a-e8c336fddbde/generations/a25ab69c-ad91-4be0-af7c-450a57770133/Default_Ankylosaurus_ultra_wide_angle_realistic_1.jpg',
     image: 'https://cdnb.artstation.com/p/assets/images/images/004/923/037/large/karl-lindberg-jurassic-world-ankylosaurus.jpg',
   },
+ 
   {
     id: 8,
-    name: 'Dilofossauro',
-    scientificName: 'Dilophosaurus wetherilli',
-    period: 'Early Jurassic',
-    diet: 'Carnivore',
-    avatar: 'https://i.etsystatic.com/31368146/r/il/8d8778/4406539408/il_570xN.4406539408_nlps.jpg',
-    image: 'https://static.scientificamerican.com/sciam/cache/file/772FAB35-5C60-47BD-AF64576CF62E910E_source.jpg?w=1200',
-  },
-  {
-    id: 9,
-    name: 'Alossauro',
-    scientificName: 'Allosaurus fragilis',
-    period: 'Jurássico Superior',
-    diet: 'Carnívoro',
-    avatar: 'https://cdn.leonardo.ai/users/47183fa0-2f62-4b2d-b55a-e8c336fddbde/generations/c50d926b-87e0-4337-8158-83e3cd276492/Default_Allosaurus_ultra_wide_angle_realistic_looking_at_the_c_1.jpg',
-    image: 'https://static.wixstatic.com/media/fd9286_403181050c39446ebf4624ad248c39e8~mv2.webp/v1/fill/w_940,h_568,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fd9286_403181050c39446ebf4624ad248c39e8~mv2.webp',
-  },
-  {
-    id: 10,
     name: 'Iguanodonte',
     scientificName: 'Iguanodon bernissartensis',
     period: 'Cretáceo Inferior',
@@ -90,7 +84,17 @@ const dinosaurData = [
     image: 'https://as2.ftcdn.net/v2/jpg/03/78/44/35/1000_F_378443517_lMNS3xQvSlsAu47945DQO8x5wRtn41Wf.jpg',
   },
   {
-    id: 11,
+    id: 9,
+    name: 'Braquiossauro',
+    scientificName: 'Brachiosaurus altithorax',
+    period: 'Jurássico Superior',
+    diet: 'Herbívoro',
+    avatar: 'https://cdn.leonardo.ai/users/47183fa0-2f62-4b2d-b55a-e8c336fddbde/generations/b3c57235-3bfd-4ac9-826c-23357486513e/Default_Brachiosaurus_45_degress_angled_face_close_up_realisti_2.jpg',
+    image: 'https://img.odcdn.com.br/wp-content/uploads/2022/03/braquissauro-capa.jpg',
+  },
+
+  {
+    id: 10,
     name: 'Brontossauro',
     scientificName: 'Brontosaurus excelsus',
     period: 'Late Jurassic',
