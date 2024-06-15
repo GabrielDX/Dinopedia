@@ -12,10 +12,11 @@
     background-color: #45a049;
 }
 
-div img {
+.dino-detail img {
+    max-height: 60vh;
     max-width: 60vw;
     border-radius: 8px;
-    height: auto;
-    margin-bottom: 10px;
-}
+};
+
+
 

@@ -1,0 +1,11 @@
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.dark .timeline {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}

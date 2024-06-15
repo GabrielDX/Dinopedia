@@ -6,13 +6,13 @@ const CommentSection = () => {
   const [comment, setComment] = useState('');
   const [comments, setComments] = useState([]);
 
-  // useEffect(() => {
-  //   // Recupera os comentários do localStorage quando o componente é montado
-  //   const storedComments = JSON.parse(localStorage.getItem('comments'));
-  //   if (storedComments) {
-  //     setComments(storedComments);
-  //   }
-  // }, []);
+  useEffect(() => {
+    // Recupera os comentários do localStorage quando o componente é montado
+    const storedComments = JSON.parse(localStorage.getItem('comments'));
+    if (storedComments) {
+      setComments(storedComments);
+    }
+  }, []);
 
   const handleCommentSubmit = (e) => {
     e.preventDefault();

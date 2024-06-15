@@ -46,7 +46,7 @@ const dinosaurData = [
     image: 'https://static.wixstatic.com/media/fd9286_403181050c39446ebf4624ad248c39e8~mv2.webp/v1/fill/w_940,h_568,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fd9286_403181050c39446ebf4624ad248c39e8~mv2.webp',
   },
   {
-    id: 4,
+    id: 6,
     name: 'Tricerátops',
     scientificName: 'Triceratops horridus',
     period: 'Cretáceo Superior',
@@ -56,7 +56,7 @@ const dinosaurData = [
   },
 
   {
-    id: 6,
+    id: 7,
     name: 'Estegossauro',
     scientificName: 'Stegosaurus stenops',
     period: 'Jurássico Superior',
@@ -65,7 +65,7 @@ const dinosaurData = [
     image: 'https://cdna.artstation.com/p/assets/images/images/025/288/668/large/polymorph-artist-02.jpg?1585306125',
   },
   {
-    id: 7,
+    id: 8,
     name: 'Anquilossauro',
     scientificName: 'Ankylosaurus magniventris',
     period: 'Cretáceo Superior',
@@ -75,7 +75,7 @@ const dinosaurData = [
   },
  
   {
-    id: 8,
+    id: 9,
     name: 'Iguanodonte',
     scientificName: 'Iguanodon bernissartensis',
     period: 'Cretáceo Inferior',
@@ -84,7 +84,7 @@ const dinosaurData = [
     image: 'https://as2.ftcdn.net/v2/jpg/03/78/44/35/1000_F_378443517_lMNS3xQvSlsAu47945DQO8x5wRtn41Wf.jpg',
   },
   {
-    id: 9,
+    id: 10,
     name: 'Braquiossauro',
     scientificName: 'Brachiosaurus altithorax',
     period: 'Jurássico Superior',
@@ -94,10 +94,10 @@ const dinosaurData = [
   },
 
   {
-    id: 10,
+    id: 11,
     name: 'Brontossauro',
     scientificName: 'Brontosaurus excelsus',
-    period: 'Late Jurassic',
+    period: 'Jurássico Superior',
     diet: 'Herbivore',
     avatar: 'https://tse1.mm.bing.net/th?id=OIG3.I4wvQrZBob7ko21QzvCz&pid=ImgGn',
     image: 'https://th.bing.com/th/id/OIG3.Y2fjoRuWQ4FBKrL2AZgx?w=1024&h=1024&rs=1&pid=ImgDetMain',
@@ -106,7 +106,7 @@ const dinosaurData = [
     id: 12,
     name: 'Diplodoco',
     scientificName: 'Diplodocus carnegii',
-    period: 'Late Jurassic',
+    period: 'Jurássico Superior',
     diet: 'Herbivore',
     avatar: 'https://dinosaurland.es/wp-content/uploads/2024/02/08-Diplodocus.jpeg',
     image: 'https://dinosaurland.es/wp-content/uploads/2024/02/08-Diplodocus.jpeg',

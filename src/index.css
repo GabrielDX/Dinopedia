@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   transition: background-color 0.6s, color 0.6s;
   min-height: 100vh;
   display: flex;
@@ -180,26 +180,6 @@ button {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.timeline ul {
-  list-style: none;
-  padding: 0;
-}
-
-.timeline-event {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.timeline-date {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.timeline-description {
-  margin-left: 10px;
-  color: #666;
-}
 
 /* ---------DARK MODE--------- */
 .dark-mode-toggle {
@@ -209,6 +189,10 @@ button {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.dark body {
+  background-color: #ff0000;
 }
 
 .dark-mode-toggle img {
@@ -223,7 +207,6 @@ button {
 
 .dark .container {
   background-color: #121212;
-
 }
 
 .dark .dino-item {
@@ -232,11 +215,6 @@ button {
   border: 1px solid #1f1f1f;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.432);
 }
-
-/* .dark .dino-detail {
-  background-color: #2b2b2b;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.432);
-} */
 
 .dark button {
   background-color: #555;
@@ -256,18 +234,4 @@ button {
 .dark h2,
 .dark h3 {
   color: #d8d8d8;
-}
-
-.dark .timeline {
-  background-color: #1e1e1e;
-  color: #f0f0f0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.432);
-}
-
-.dark .timeline h1 {
-  color: #f0f0f0;
-}
-
-.dark .timeline-description {
-  color: #ccc;
 }
