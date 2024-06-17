@@ -22,7 +22,14 @@ const DinosaurList = () => {
 
     return (
         <div>
-            <Link to="/"><button>Voltar</button></Link>
+            <div className='div-back-button'>
+                <Link to="/">
+                    <button className="back-button">Voltar</button>
+                </Link>
+            </div>
+
+            {/* <Link to="/" button className="back-button">Voltar</Link> */}
+
             <h1>Dinossauros</h1>
             <SearchBar onSearch={handleSearch}>
                 <p>Digite o nome de um dinossauro para buscar:</p>
@@ -30,12 +37,12 @@ const DinosaurList = () => {
             <br />
             <div className="dino-list">
                 {filteredDinosaurs.map(dino => (
-                    <div key={dino.id} className="dino-item">
-                        <Link to={`/dinosaurs/${dino.id}`}>
+                    <Link to={`/dinosaurs/${dino.id}`}>
+                        <div key={dino.id} className="dino-item">
                             <img src={dino.avatar} alt={dino.image} />
                             <p>{dino.name}</p>
-                        </Link>
-                    </div>
+                        </div>
+                    </Link>
                 ))}
             </div>
         </div>

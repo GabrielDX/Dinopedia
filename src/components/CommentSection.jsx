@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../index.css';
+import './CommentSection.css';
 
 const CommentSection = () => {
   const [name, setName] = useState('');
@@ -54,7 +54,7 @@ const CommentSection = () => {
             <p><strong>{c.name}</strong></p>
             <p>{c.comment}</p>
           </div>
-        ))}
+        ))}      
       </div>
     </div>
   );

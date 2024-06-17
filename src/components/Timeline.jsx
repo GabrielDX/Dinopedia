@@ -29,9 +29,11 @@ const Timeline = () => {
 
     return (
         <div>
-            <Link to="/">
-                <button className="back-button">Voltar</button>
-            </Link>
+            <div className='div-back-button'>
+                <Link to="/">
+                    <button className="back-button">Voltar</button>
+                </Link>
+            </div>
             <div className="timeline">
                 {timelineEvents.map((event, index) => (
                     <Card>

@@ -1,0 +1,12 @@
+.back-button:hover {
+    background-color: #45a049;
+}
+
+.dino-detail img {
+    max-height: 60vh;
+    max-width: 60vw;
+    border-radius: 8px;
+};
+
+
+

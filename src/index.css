@@ -13,7 +13,6 @@ body {
 }
 
 .color-mode {
-  aspect-ratio: 1;
   filter: invert(var(--dark-mode));
   inline-size: 25rem;
   max-inline-size: 40px;
@@ -108,62 +107,28 @@ button {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-button:hover {
-  background-color: #45a049;
-  background: #4F95DA;
-}
-
-.comment-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-/* Borda comentários */
-.comment {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #8585857a;
-  border-radius: 20px;
-}
-
-/* Caixas de digitação de nome e mensagem */
-.form-group,
-.form-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 10px;
-  width: 70%;
-}
-
-.form-control {
-  padding: 10px;
-  margin-bottom: 10px;
-  width: calc(100% - 20px);
-}
-
-.form-group,
-.form-control,
-button {
-  display: flex;
-  align-items: center;
-}
-
-input[type="text"],
-textarea {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
 button {
   height: 50px;
-  align-self: center;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  align-self: flex-start;
+}
+
+.div-back-button {
+  display: flex;
+  align-content: flex-start;
 }
 
 .Homebuttons {
@@ -173,12 +138,8 @@ button {
   margin-top: 20px;
 }
 
-.timeline {
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
+
+
 
 
 /* ---------DARK MODE--------- */
